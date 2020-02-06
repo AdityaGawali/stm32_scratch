@@ -36,7 +36,7 @@
 # TARGET: This sets the name of the program.                                   #
 #         It's used as a prefix for the output files.                          #
 # **************************************************************************** #
-TARGET = myprogram
+TARGET = test
 
 
 
@@ -44,7 +44,7 @@ TARGET = myprogram
 # OTHER_SRCS: List here all the .c files that needs to be compiled.            #
 #             You can separete them using a space.                             #
 # **************************************************************************** #
-OTHER_SRCS = main.c
+OTHER_SRCS = ../src/main.c
 
 
 
@@ -65,8 +65,8 @@ OPTFLAGS = -O0
 # **************************************************************************** #
 # You probably don't need to change these.                                     #
 # **************************************************************************** #
-INIT_SRC = init.c
-LINKER_SCRIPT = STM32F103C8.ld
+INIT_SRC = ../src/init.c
+LINKER_SCRIPT = ../../../script/STM32F103C8.ld
 STUTIL_PORT = 4242
 DBG_OPTFLAGS = -O0
 REMOVE_OBJS = Y
